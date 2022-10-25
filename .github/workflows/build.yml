@@ -10,11 +10,11 @@ jobs:
     env:
       GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       GITHUB_USER: ${{github.actor}}
-      WS_APIKEY: ${{secrets.PROD_MEND_APIKEY}}
-      WS_USERKEY: ${{secrets.PROD__MEND_USERKEY}}
+      WS_APIKEY: bddcf96f30dc4322805c24e8ccbdfdf2241f426a599142008d9477c28a7f8f2f
+      WS_USERKEY: bfb21e8351dd4fc7a8eb4fdad070899fef941baeb47b4660b7a0cef07924921e
       WS_PRODUCTNAME: ${{github.event.repository.name}}
       WS_PROJECTNAME: ${{github.event.repository.name}}_${{github.ref_name}}
-      WS_WSS_URL: https://demo.mend.io/agent
+      WS_WSS_URL: https://saas.mend.io/agent
 
     runs-on: ubuntu-latest
 
