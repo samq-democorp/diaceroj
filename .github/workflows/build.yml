@@ -8,4 +8,6 @@ on:
 jobs:
   call-java-prioritize:
     uses: samq-democorp/whitesource-config/.github/workflows/java-prioritize.yml@main
+    with:
+      mvn-cmd: 'mvn clean install -s settings.xml'
     secrets: inherit
